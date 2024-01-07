@@ -17,6 +17,10 @@ init: false
 map:
 - config:rw
 - ssl
+devices:
+- "/dev/input/event0"
+environment:
+  ATTACH_BARCODESCANNER: 'true'
 ports:
   80/tcp: 8621
 ports_description:
